@@ -38,7 +38,7 @@ super + o
 
 # browser
 super + space
-	"$SYS"/scratchpad.py -d 10 -c Chromium -x chromium
+	"$SYS"/scratchpad.py -d 10 -c Google-chrome -x google-chrome-stable
 
 # # take notes
 # super + n

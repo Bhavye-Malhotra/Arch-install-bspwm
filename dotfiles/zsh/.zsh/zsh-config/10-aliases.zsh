@@ -1,9 +1,9 @@
 #git
 alias ga='git add -p'
 alias gar='git add --all .'
-alias gc='git commit -S -vv'
-alias gca='git commit -S --amend'
-alias gcr='git commit -S --amend --reuse-message=HEAD'
+alias gc='git commit -vv'
+alias gca='git commit --amend'
+alias gcr='git commit --amend --reuse-message=HEAD'
 alias gd='git diff'
 alias gl='git verboselog'
 alias gll='git log'

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if ! hash polybar dmidecode picom redshift 2>/dev/null; then exit 1; fi
+if ! hash polybar dmidecode picom 2>/dev/null; then exit 1; fi
 
 sleep 11
 
@@ -14,5 +14,5 @@ if (sudo dmidecode | grep -A3 '^System Information' | grep -qi 'virtual'); \
 then true; else kill -s usr1 $(pgrep picom); picom -b; fi
 
 # redshift : save my aging eyes
-redshift -x && redshift -O 5800K
-
+# redshift -x && redshift -O 5800K
+xrandr --output eDP-1 --brightness 0.8
